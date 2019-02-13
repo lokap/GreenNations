@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
+import { MenuService } from '../services/menu.service';
+import { ScreenService } from '../services/screen.service';
+
 @Component({
   selector: 'fw-content',
   templateUrl: './content.component.html',
-  styles: []
+  styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private menuService: MenuService,
+              private screenService: ScreenService) { }
 
   ngOnInit() {
   }
